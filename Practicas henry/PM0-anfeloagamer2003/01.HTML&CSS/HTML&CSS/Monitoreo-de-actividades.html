@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitoreo de Actividades</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="HEN-Logo.png" alt="Logo Seguridad SAS" />
+      </div>
+
+      <nav class="menu">
+        <a href="Home.html">Home</a>
+        <a href="Generar-contrasena.html">Generar contraseña</a>
+        <a href="Caja-fuerte.html">Caja fuerte</a>
+        <a href="Monitoreo-de-actividades.html">Monitoreo de actividades</a>
+        <a href="Gestión-de-usuarios.html">Gestión de Usuarios</a>
+      </nav>
+    </header>
+
+    <main class="monitor-wrapper">
+      <h2 class="monitor-title">Asistente De Seguridad</h2>
+      <div class="monitor-subtitle">
+        SISTEMA DE MONITOREO DE ACTIVIDAD SOSPECHOSA
+      </div>
+
+      <section class="monitor-box">
+        <form class="monitor-form">
+          <div class="monitor-row">
+            <label>Descripción</label>
+            <input type="text" />
+            <label>Nivel de riesgo</label>
+            <input type="text" />
+            <button class="monitor-btn">AGREGAR ACTIVIDAD</button>
+          </div>
+        </form>
+
+        <form class="monitor-form">
+          <div class="monitor-row">
+            <label>Eliminar una actividad sospechosa</label>
+            <input type="text" />
+            <button class="monitor-btn">ELIMINAR ACTIVIDAD</button>
+          </div>
+        </form>
+
+        <form class="monitor-form">
+          <div class="monitor-row">
+            <label>Filtra actividades por nivel de riesgo</label>
+            <input type="text" />
+            <button class="monitor-btn">MOSTRAR ACTIVIDADES</button>
+          </div>
+        </form>
+
+        <form class="monitor-form">
+          <div class="monitor-row">
+            <label>Reporte de actividades</label>
+            <input type="text" />
+            <button class="monitor-btn">GENERAR REPORTE</button>
+          </div>
+        </form>
+
+        <div class="monitor-output">
+          Id: 0 Descripción: asdf, Riesgo - medio<br />
+          Id: 1 Descripción: asdf, Riesgo - medio<br />
+          Id: 2 Descripción: asdf, Riesgo - medio<br />
+          Id: 3 Descripción: asdf, Riesgo - alto
+        </div>
+      </section>
+    </main>
+    <script src="Funcionalidades js/monitoreoActividad.js"></script>
+  </body>
+</html>

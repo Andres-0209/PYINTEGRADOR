@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="HEN-Logo.png" alt="Logo Henry" />
+      </div>
+
+      <nav class="menu">
+        <a href="Home.html">Home</a>
+        <a href="Generar-contrasena.html">Generar contraseña</a>
+        <a href="Caja-fuerte.html">Caja fuerte</a>
+        <a href="Monitoreo-de-actividades.html">Monitoreo de actividades</a>
+        <a href="Gestión-de-usuarios.html">Gestión de Usuarios</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="generator-header">
+        <h2 class="generator-title">Asistente de Seguridad</h2>
+        <p class="generator-subtitle">Generador de contraseñas para usuarios</p>
+      </div>
+
+      <form class="generator-form">
+        <div class="form-group">
+          <label for="longitud">Cantidad de caracteres deseados:</label>
+          <input
+            type="number"
+            id="longitud"
+            name="longitud"
+            min="3"
+            max="10"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="especiales">Incluir caracteres especiales:</label>
+          <input type="checkbox" id="especiales" name="especiales" />
+        </div>
+
+        <div class="form-group">
+          <label for="numeros">Incluir caracteres numéricos:</label>
+          <input type="checkbox" id="numeros" name="numeros" />
+        </div>
+
+        <div class="form-group">
+          <label for="mayusculas">Incluir letras mayúsculas:</label>
+          <input type="checkbox" id="mayusculas" name="mayusculas" />
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn generar-btn">
+            Generar Contraseña
+          </button>
+          <button type="reset" class="btn limpiar-btn">Limpiar</button>
+        </div>
+
+        <div id="resultado" class="form-group"></div>
+      </form>
+    </main>
+
+    <script src="Funcionalidades js/generadorContrasenas.js"></script>
+  </body>
+</html>

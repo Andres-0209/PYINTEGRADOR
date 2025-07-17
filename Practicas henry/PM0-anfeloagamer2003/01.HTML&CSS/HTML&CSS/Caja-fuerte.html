@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja Fuerte</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="HEN-Logo.png" alt="Logo de Seguridad SAS" />
+      </div>
+
+      <nav class="menu">
+        <a href="Home.html">Home</a>
+        <a href="Generar-contrasena.html">Generar contraseña</a>
+        <a href="Caja-fuerte.html">Caja fuerte</a>
+        <a href="Monitoreo-de-actividades.html">Monitoreo de actividades</a>
+        <a href="Gestión-de-usuarios.html">Gestión de Usuarios</a>
+      </nav>
+    </header>
+
+    <main class="vault-container">
+      <h2 class="vault-title">Asistente de Seguridad</h2>
+      <p class="vault-title-box">Caja Fuerte</p>
+      <form method="post" action="#" class="vault-form" autocomplete="off">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="codigoSecreto">Código Secreto:</label>
+            <input
+              type="password"
+              id="codigoSecreto"
+              name="codigoSecreto"
+              maxlength="4"
+              pattern="\d{4}"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="intentos">Cantidad de intentos:</label>
+            <input
+              type="number"
+              id="intentos"
+              name="intentos"
+              required
+              min="1"
+              max="5"
+            />
+          </div>
+
+          <div class="form-group">
+            <button type="button" id="guardarBtn" class="btn guardar-btn">
+              GUARDAR
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="validarCodigo">Validar código secreto:</label>
+          <input
+            type="password"
+            id="validarCodigo"
+            name="validarCodigo"
+            maxlength="4"
+            pattern="\d{4}"
+            placeholder="Ingrese su código secreto"
+            required
+            autocomplete="off"
+          />
+          <button type="button" id="validarBtn" class="btn validar-btn">
+            Validar Código
+          </button>
+        </div>
+
+        <div class="form-group">
+          <p id="mensaje" class="mensaje-usuario"></p>
+        </div>
+
+        <div class="button-group">
+          <button type="reset" class="btn reset-btn">Reset</button>
+        </div>
+      </form>
+    </main>
+    <script src="Funcionalidades js/cajaFuerte.js"></script>
+  </body>
+</html>

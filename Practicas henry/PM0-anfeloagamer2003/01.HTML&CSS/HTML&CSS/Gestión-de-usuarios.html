@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="HEN-Logo.png" alt="Logo Seguridad SAS" />
+      </div>
+
+      <nav class="menu">
+        <a href="Home.html">Home</a>
+        <a href="Generar-contrasena.html">Generar contraseña</a>
+        <a href="Caja-fuerte.html">Caja fuerte</a>
+        <a href="Monitoreo-de-actividades.html">Monitoreo de actividades</a>
+        <a href="Gestión-de-usuarios.html">Gestión de Usuarios</a>
+      </nav>
+    </header>
+
+    <main class="perfil-wrapper">
+      <h2 class="perfil-title">Asistente De Seguridad</h2>
+      <div class="perfil-subtitle">GESTIÓN DE PERFILES</div>
+
+      <section class="perfil-box">
+        <form
+          method="post"
+          action="#"
+          class="perfil-form"
+          onsubmit="return false"
+        >
+          <div class="perfil-row">
+            <label for="verPerfil">Ver Perfiles</label>
+            <input
+              type="text"
+              id="opcion-vista"
+              name="verPerfil"
+              placeholder="Título"
+            />
+            <button type="button" id="btn-ver" class="perfil-btn">VER</button>
+          </div>
+
+          <div class="perfil-row">
+            <label for="porAntiguedad">Ver Perfiles Por Antigüedad</label>
+            <button type="button" id="btn-antiguedad" class="perfil-btn">
+              VER
+            </button>
+          </div>
+
+          <div class="perfil-row">
+            <label for="verAdmin">Ver Administradores</label>
+            <button type="button" id="btn-admins" class="perfil-btn">
+              VER
+            </button>
+          </div>
+
+          <div class="perfil-row">
+            <label>Modificar Acceso</label>
+          </div>
+
+          <div class="perfil-row">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="input-usuario" name="usuario" />
+          </div>
+
+          <div class="perfil-row">
+            <label for="nuevoCodigo">Nuevo código de acceso</label>
+            <input type="text" id="input-nuevo-codigo" name="nuevoCodigo" />
+            <button type="button" id="btn-actualizar" class="perfil-btn">
+              ACTUALIZAR
+            </button>
+          </div>
+        </form>
+
+        <div id="perfil-output" class="perfil-output">
+          <p>
+            <strong
+              >Usuario - Código - Nivel de autorización - Antigüedad</strong
+            >
+          </p>
+          <p>Alice - 1234 - bajo - 12</p>
+          <p>Bob - 5678 - medio - 24</p>
+          <p>Charlie - 9101 - alto - 35</p>
+          <p>Diana - 1122 - admin - 48</p>
+          <p>Eve - 334 - bajo - 6</p>
+          <p>Frank - 5566 - medio - 12</p>
+          <p>Grace - 7788 - alto - 18</p>
+          <p>Hank - 9900 - admin - 30</p>
+          <p>Ivy - 1235 - bajo - 36</p>
+          <p>Jack - 5679 - medio - 48</p>
+          <p>Karen - 9102 - alto - 6</p>
+          <p>Leo - 1123 - admin - 24</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="Funcionalidades js/gestionUsuarios.js"></script>
+  </body>
+</html>
